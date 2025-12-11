@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#0ea5a4' }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <header id="top" role="banner">
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-8">
+        <img src="images/download.jpg" alt="Profile photo of Your Name" class="w-40 h-40 object-cover rounded-full mx-auto" />
+        <h1 class="text-4xl md:text-6xl font-bold">Marck Joshua A. Senin</h1>
+        <p class="mt-4 text-xl text-slate-600">IT Student - Aspiring Web Developer - Web Designer</p>
+        <a href="projects.html" class="mt-6 inline-block px-6 py-3 rounded-lg bg-primary text-white">View My Work</a>
+    
+    <div class="flex gap-4 justify-center">
+        <a href="https://www.facebook.com/joshua.senin" target="_blank" class="text-blue-600 text-2xl hover:text-blue-800 transition">
+        <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/aisyle25" target="_blank" class="text-pink-500 text-2xl hover:text-pink-700 transition">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/Marck13241" target="_blank" class="text-gray-800 text-2xl hover:text-gray-600 transition">
+        <i class="fab fa-github"></i>
+        </a>
+    </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>© 2025 Your Name</small>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
