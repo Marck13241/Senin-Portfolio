@@ -8,17 +8,28 @@ tailwind.config = {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll(".nav-link");
+  const smoothLinks = document.querySelectorAll('a[href^="#"], a[href="index.html"]');
 
-  links.forEach(link => {
+  smoothLinks.forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault(); // prevent default jump
 
-      const targetId = link.getAttribute("href").replace("#", "");
+      let targetId = link.getAttribute("href");
+
+      // Special case for Home
+      if (targetId === "index.html" || targetId === "#top") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+        return; // stop here
+      }
+
+      // For other sections
+      targetId = targetId.substring(1); // remove #
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
-        // Scroll so that the section is centered in the viewport
         const topOffset = targetSection.getBoundingClientRect().top + window.scrollY;
         const middleOffset = topOffset - (window.innerHeight / 2) + (targetSection.offsetHeight / 2);
 
