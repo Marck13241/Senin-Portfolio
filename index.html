@@ -1,67 +1,243 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
+  <title>Marck Joshua A. Senin — Portfolio</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Bootstrap -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { primary: '#0ea5a4' }
-        }
-      }
-    }
-  </script>
-
+  <script src="scripts/main.js" defer></script>
 </head>
-<body>
-  <header id="top" role="banner">
-    <nav aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-    </nav>
-  </header>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
 
-  <main>
+<!-- HEADER / NAV -->
+<header id="top" role="banner" class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+  <nav aria-label="Primary" class="flex gap-4 justify-center">
+    <a href="#hero" class="nav-link text-primary font-semibold hover:underline">Home</a>
+    <a href="#about" class="nav-link text-primary font-semibold hover:underline">About</a>
+    <a href="#skills" class="nav-link text-primary font-semibold hover:underline">Skills</a>
+    <a href="#projects" class="nav-link text-primary font-semibold hover:underline">Projects</a>
+    <a href="#contact" class="nav-link text-primary font-semibold hover:underline">Contact</a>
+  </nav>
+</header>
 
-    <!-- HERO -->
-    <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-8">
-        <img src="images/download.jpg" alt="Profile photo of Your Name" class="w-40 h-40 object-cover rounded-full mx-auto" />
-        <h1 class="text-4xl md:text-6xl font-bold">Marck Joshua A. Senin</h1>
-        <p class="mt-4 text-xl text-slate-600">IT Student - Aspiring Web Developer - Web Designer</p>
-        <a href="projects.html" class="mt-6 inline-block px-6 py-3 rounded-lg bg-primary text-white">View My Work</a>
-    
-    <div class="flex gap-4 justify-center">
-        <a href="https://www.facebook.com/joshua.senin" target="_blank" class="text-blue-600 text-2xl hover:text-blue-800 transition">
-        <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/aisyle25" target="_blank" class="text-pink-500 text-2xl hover:text-pink-700 transition">
-        <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Marck13241" target="_blank" class="text-gray-800 text-2xl hover:text-gray-600 transition">
-        <i class="fab fa-github"></i>
-        </a>
+<main>
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-8">
+    <img src="images/download.jpg" alt="Profile photo" class="w-40 h-40 object-cover rounded-full mx-auto" />
+    <h1 class="text-4xl md:text-6xl font-bold mt-4">Marck Joshua A. Senin</h1>
+    <p class="mt-4 text-xl text-slate-100">IT Student - Aspiring Web Developer - Web Designer</p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-3 rounded-lg bg-primary text-white hover:bg-teal-600 transition">View My Work</a>
+
+    <div class="flex gap-4 justify-center mt-6">
+      <a href="https://www.facebook.com/joshua.senin" target="_blank" class="text-blue-600 text-2xl hover:text-blue-800 transition"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/aisyle25" target="_blank" class="text-pink-500 text-2xl hover:text-pink-700 transition"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Marck13241" target="_blank" class="text-gray-200 text-2xl hover:text-white transition"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/marck-joshua-senin-859335356" target="_blank" class="text-blue-500 text-2xl hover:text-blue-700 transition"><i class="fab fa-linkedin"></i></a>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="p-8 max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6">
+    <img src="images/download.jpg" alt="Profile photo" class="w-40 h-40 object-cover rounded-full" />
+    <div>
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p>Web developer and tech enthusiast who loves turning ideas into interactive websites. Experienced in frontend development, focusing on clean design, responsive layouts, and seamless user experience.</p>
+      <br>
+      <p>Motivated and growth-driven individual with a strong interest in technology, project management, and creating meaningful work. I enjoy solving problems, learning new tools, and collaborating with diverse teams to deliver high-quality results. I’m passionate about developing my skills and adding value in every environment I’m part of.</p>
+      <a href="assets/Candidat-who_Senin_CV.pdf" target="_blank" class="mt-4 inline-block bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">View Resume</a>
     </div>
-    </section>
+  </section>
+  <br><br><br><br><br>
 
-  </main>
+  <!-- SKILLS -->
+  <section id="skills" class="p-8 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Skills</h2>
 
-  <footer>
-    <small>© 2025 Your Name</small>
-  </footer>
+    <div class="space-y-6">
 
-  <script src="scripts/main.js"></script>
+      <!-- HTML -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-brands fa-html5 text-orange-500 text-3xl"></i>
+          <span class="text-lg font-semibold">HTML</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-orange-500 h-6 rounded-full" style="width: 90%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">90%</span>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-brands fa-css3-alt text-blue-500 text-3xl"></i>
+          <span class="text-lg font-semibold">CSS</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-blue-500 h-6 rounded-full" style="width: 85%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">85%</span>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-brands fa-js text-yellow-400 text-3xl"></i>
+          <span class="text-lg font-semibold">JavaScript</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-yellow-400 h-6 rounded-full" style="width: 70%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">70%</span>
+        </div>
+      </div>
+
+      <!-- PHP -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-brands fa-php text-indigo-500 text-3xl"></i>
+          <span class="text-lg font-semibold">PHP</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-indigo-500 h-6 rounded-full" style="width: 70%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">70%</span>
+        </div>
+      </div>
+
+      <!-- Laravel -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-brands fa-laravel text-red-600 text-3xl"></i>
+          <span class="text-lg font-semibold">Laravel</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-red-600 h-6 rounded-full" style="width: 80%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">85%</span>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <i class="fa-solid fa-database text-teal-600 text-3xl"></i>
+          <span class="text-lg font-semibold">MySQL</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-6 relative">
+          <div class="bg-teal-600 h-6 rounded-full" style="width: 80%;"></div>
+          <span class="absolute right-2 top-1 text-sm font-semibold text-black">80%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="p-8 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+  <div class="grid gap-8">
+
+    <!-- Project Card 1 -->
+    <article class="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition flex flex-col md:flex-row items-center">
+      <!-- Image on the left -->
+      <div class="flex-shrink-0">
+        <img src="assets/candidat-who.png" alt="Project Screenshot" class="w-full md:w-96 h-48 md:h-64 object-cover rounded-lg"/>
+      </div>
+
+      <!-- Text on the right -->
+      <div class="p-6 flex-1">
+        <h3 class="font-bold text-xl mb-2">Candidat.Who?: A Barangay Bonuan Binloc Officials Information System</h3>
+        <p class="mb-4 text-gray-700 dark:text-gray-300">Short description of the project and technologies used.</p>
+        <div class="flex gap-3">
+          <a href="https://github.com/Marck13241/Candidat-Who.git" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">Code</a>
+          <a href="https://github.com/Marck13241/Candidat-Who" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project Card 2 -->
+    <article class="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition flex flex-col md:flex-row items-center">
+      <div class="flex-shrink-0">
+        <img src="assets/about.png" alt="Project Screenshot" class="w-full md:w-96 h-48 md:h-64 object-cover rounded-lg"/>
+      </div>
+      <div class="p-6 flex-1">
+        <h3 class="font-bold text-xl mb-2">Elective Activity 2</h3>
+        <p class="mb-4 text-gray-700 dark:text-gray-300">Todo list with localStorage, filtering, responsive design. Built with HTML/CSS/JS.</p>
+        <div class="flex gap-3">
+          <a href="https://github.com/Marck13241/Elective-Midterm-LabAct1.git" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">Code</a>
+          <a href="https://github.com/Marck13241/Elective-Midterm-LabAct1" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project Card 3 -->
+    <article class="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition flex flex-col md:flex-row items-center">
+      <div class="flex-shrink-0">
+        <img src="assets/labact.png" alt="Project Screenshot" class="w-full md:w-96 h-48 md:h-64 object-cover rounded-lg"/>
+      </div>
+      <div class="p-6 flex-1">
+        <h3 class="font-bold text-xl mb-2">Elective Activity 1</h3>
+        <p class="mb-4 text-gray-700 dark:text-gray-300">Todo list with localStorage, filtering, responsive design. Built with HTML/CSS/JS.</p>
+        <div class="flex gap-3">
+          <a href="https://github.com/Marck13241/Elective-Midterm-LabAct1.git" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">Code</a>
+          <a href="https://github.com/Marck13241/Elective-Midterm-LabAct1" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project Card 4 -->
+    <article class="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition flex flex-col md:flex-row items-center">
+      <div class="flex-shrink-0">
+        <img src="assets/mouse-events.png" alt="Project Screenshot" class="w-full md:w-96 h-48 md:h-64 object-cover rounded-lg"/>
+      </div>
+      <div class="p-6 flex-1">
+        <h3 class="font-bold text-xl mb-2">Event-Driven Programming Activity</h3>
+        <p class="mb-4 text-gray-700 dark:text-gray-300">Todo list with localStorage, filtering, responsive design. Built with HTML/CSS/JS.</p>
+        <div class="flex gap-3">
+          <a href="https://github.com/Marck13241/Marck-Joshua.git" target="_blank" class="bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">Code</a>
+          <a href="https://github.com/Marck13241/Marck-Joshua" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Live Demo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+  <br>
+
+  <!-- CONTACT -->
+<section id="contact" class="p-8 max-w-3xl mx-auto">
+  <h2 class="text-2xl font-bold mb-6 text-white">Contact Me:</h2>
+  <form action="https://formspree.io/f/mrbnyvdb" method="POST" class="flex flex-col gap-4 mb-6">
+    <label class="flex flex-col text-white">
+      Name
+      <input type="text" name="name" placeholder="Your Name" required
+             class="border border-gray-300 rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-primary text-white bg-gray-800 placeholder-gray-400">
+    </label>
+    <label class="flex flex-col text-white">
+      Email
+      <input type="email" name="_replyto" placeholder="Your Email" required
+             class="border border-gray-300 rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-primary text-white bg-gray-800 placeholder-gray-400">
+    </label>
+    <label class="flex flex-col text-white">
+      Message
+      <textarea name="message" placeholder="Your Message" required
+                class="border border-gray-300 rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-primary text-white bg-gray-800 placeholder-gray-400"></textarea>
+    </label>
+    <button type="submit" class="bg-primary text-white px-4 py-2 rounded hover:bg-teal-600 transition">Send</button>
+  </form>
+</section>
+</main>
+
+<footer class="p-4 text-center bg-white dark:bg-gray-600 text-gray-800 dark:text-gray-200">
+  <small>© 2025 Marck Joshua A. Senin</small>
+</footer>
+
 </body>
 </html>
